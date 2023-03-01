@@ -13,7 +13,7 @@ which generally includes drop out, attention and residual block.
 
 We know neural networks are universal function approximators and that the accuracy increases with increasing the number of layers. But there is a limit to the number of layers added that results in an accuracy improvement. So, if neural networks were universal function approximators, then they should have been able to learn any simplex or complex function. But it turns out that, thanks to some problems like vanishing gradients and the curse of dimensionality, if we have sufficiently deep networks, it may not be able to learn simple functions like an identity function. Now, this is clearly undesirable.
 
-![Residual block](assets/Residual block.png)
+![Residual block](assets/Residual%20block.png)
 
 The idea is that instead of letting layers learn the underlying mapping, let the network fit the residual mapping. So, instead of say H(x), initial mapping, let the network fit, F(x) := H(x)-x which gives H(x) := F(x) + x
 
